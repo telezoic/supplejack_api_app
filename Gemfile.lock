@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:digitalnz/supplejack_api.git
-  revision: 78d37bcf1e93a6b6bac217384dd00c56a0ccebec
+  revision: afb11a84b3ca67e401bc5f63825bfbb106b42e37
   specs:
     supplejack_api (1)
       active_model_serializers
@@ -33,8 +33,8 @@ GIT
       sass-rails (~> 4.0.3)
       simple_form (~> 3.0.2)
       state_machine (~> 1.1.2)
-      sunspot_rails (~> 2.2.0)
-      sunspot_solr (~> 2.2.0)
+      sunspot_rails (= 2.2.0)
+      sunspot_solr (= 2.2.0)
       therubyracer (~> 0.12.0)
       thin (~> 1.6.2)
       uglifier (~> 2.5.0)
@@ -266,14 +266,14 @@ GEM
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
     state_machine (1.1.2)
-    sunspot (2.2.4)
+    sunspot (2.2.0)
       pr_geohash (~> 1.0)
       rsolr (~> 1.0.7)
-    sunspot_rails (2.2.4)
+    sunspot_rails (2.2.0)
       nokogiri
       rails (>= 3)
-      sunspot (= 2.2.4)
-    sunspot_solr (2.2.4)
+      sunspot (= 2.2.0)
+    sunspot_solr (2.2.0)
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
