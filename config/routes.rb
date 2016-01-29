@@ -53,4 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  mount SupplejackApi::Engine => '/', as: 'supplejack_api'
+
 end

@@ -1,0 +1,37 @@
+# The majority of the Supplejack API code is Crown copyright (C) 2014, New Zealand Government, 
+# and is licensed under the GNU General Public License, version 3.
+# One component is a third party component. See https://github.com/DigitalNZ/supplejack_api for details. 
+# 
+# Supplejack was created by DigitalNZ at the National Library of NZ and 
+# the Department of Internal Affairs. http://digitalnz.org/supplejack
+
+defaults: &defaults
+  SOLR_PING: 'http://localhost:8982/solr/admin/ping'
+  HTTP_HOST: 'http://localhost:3000'
+  WORKER_API_URL: 'http://localhost:3002'
+  WWW_DOMAIN: 'www.dev'
+  DEVISE_MAILER: 'mailer@example.com'
+  RESQUE_USER: 'admin'
+  RESQUE_PASS: 'password'
+  HARVESTER_IPS: '127.0.0.1'
+  REQUEST_LIMIT_MAILER: 'develop@digitalnz.org'
+  BLACKLIST_MAILER_TO: 'blacklist@mailer.com'
+  BLACKLIST_MAILER_FROM: 'mailer@blacklist.org'
+  HTTP_HOST: 'http://test.host'
+  MONGOID_HOSTS: 'localhost:27017'
+  SECRET_TOKEN: 'd1cbb7c32869ad319dedabb4adbeba3678430235'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+  SOLR_PING: 'http://test.host'
+  HTTP_HOST: 'http://test.host'
+  WWW_DOMAIN: 'test.host'
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
