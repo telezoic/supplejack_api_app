@@ -1,6 +1,6 @@
 GIT
-  remote: git@github.com:digitalnz/supplejack_api.git
-  revision: afb11a84b3ca67e401bc5f63825bfbb106b42e37
+  remote: https://github.com/DigitalNZ/supplejack_api.git
+  revision: c8298b243a7d7bc54b14e08b2f9d6fa52939ead6
   specs:
     supplejack_api (1)
       active_model_serializers
