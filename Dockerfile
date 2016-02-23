@@ -18,7 +18,7 @@ RUN bundle config build.nokogiri --use-system-libraries
 
 RUN mkdir /api
 
-CMD ssh-keygen -q -t rsa -N '' -f /root/.ssh/id_rsa
+# CMD ssh-keygen -q -t rsa -N '' -f /root/.ssh/id_rsa
 
 # http://ilikestuffblog.com/2014/01/06/how-to-skip-bundle-install-when-deploying-a-rails-app-to-docker/
 WORKDIR /tmp
