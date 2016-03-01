@@ -17,7 +17,6 @@ defaults: &defaults
   REQUEST_LIMIT_MAILER: 'develop@digitalnz.org'
   BLACKLIST_MAILER_TO: 'blacklist@mailer.com'
   BLACKLIST_MAILER_FROM: 'mailer@blacklist.org'
-  HTTP_HOST: 'http://test.host'
   MONGOID_HOSTS: 'localhost:27017'
   SECRET_TOKEN: 'd1cbb7c32869ad319dedabb4adbeba3678430235'
 
