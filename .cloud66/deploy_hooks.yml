@@ -1,0 +1,5 @@
+development: 
+  last_thing: 
+    command: "cd $STACK_PATH && rake db:seed"
+    execute: true
+    target: rails
