@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 4.1.4'
 
 # Supplejack gems
-gem 'supplejack_api', git: 'https://github.com/DigitalNZ/supplejack_api.git'
+gem 'supplejack_api', git: 'https://github.com/hapiben/supplejack_api.git', branch: 'ba/remove-harvester-constraints'
 gem 'sunspot_rails', '~> 2.2.0'
 gem 'active_model_serializers', git: 'https://github.com/boost/active_model_serializers.git'
 gem 'mongoid_auto_inc', git: 'https://github.com/boost/mongoid_auto_inc.git'

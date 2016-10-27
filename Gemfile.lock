@@ -1,6 +1,20 @@
 GIT
-  remote: https://github.com/DigitalNZ/supplejack_api.git
-  revision: 5600ce9ede280592b7a31041a1a71df99c32dbb0
+  remote: https://github.com/boost/active_model_serializers.git
+  revision: eae33420a94de463adbaab1fac7aab90584ea1af
+  specs:
+    active_model_serializers (0.1.0)
+      activemodel (~> 4.0)
+
+GIT
+  remote: https://github.com/boost/mongoid_auto_inc.git
+  revision: 8893486e0b69c77174e869c69e001734210a85bb
+  specs:
+    mongoid_auto_inc (0.1.0)
+
+GIT
+  remote: https://github.com/hapiben/supplejack_api.git
+  revision: c6b0c27aff5cf85f3f0f93dba37ffe66d7f59aec
+  branch: ba/remove-harvester-constraints
   specs:
     supplejack_api (1)
       active_model_serializers
@@ -41,19 +55,6 @@ GIT
       unicode_utils (~> 1.4.0)
       zurb-foundation (~> 4.3.2)
 
-GIT
-  remote: https://github.com/boost/active_model_serializers.git
-  revision: eae33420a94de463adbaab1fac7aab90584ea1af
-  specs:
-    active_model_serializers (0.1.0)
-      activemodel (~> 4.0)
-
-GIT
-  remote: https://github.com/boost/mongoid_auto_inc.git
-  revision: 8893486e0b69c77174e869c69e001734210a85bb
-  specs:
-    mongoid_auto_inc (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -77,10 +78,10 @@ GEM
       activemodel (= 4.1.14.1)
       activesupport (= 4.1.14.1)
       arel (~> 5.0.0)
-    activeresource (4.0.0)
+    activeresource (4.1.0)
       activemodel (~> 4.0)
       activesupport (~> 4.0)
-      rails-observers (~> 0.1.1)
+      rails-observers (~> 0.1.2)
     activesupport (4.1.14.1)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
@@ -88,12 +89,12 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    bcrypt (3.1.10)
+    bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bson (3.2.6)
     builder (3.2.2)
-    chunky_png (1.3.5)
+    chunky_png (1.3.7)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.8)
@@ -112,7 +113,7 @@ GEM
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
     connection_pool (2.2.0)
-    daemons (1.2.3)
+    daemons (1.2.4)
     dalli (1.1.5)
     debug_inspector (0.0.2)
     devise (3.4.1)
@@ -126,7 +127,7 @@ GEM
       devise (~> 3.4.0)
     dimensions (1.2.0)
     erubis (2.7.0)
-    eventmachine (1.0.9.1)
+    eventmachine (1.2.0.1)
     execjs (2.6.0)
     figaro (0.7.0)
       bundler (~> 1.0)
@@ -149,10 +150,9 @@ GEM
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    lazy_high_charts (1.5.4)
-      bundler (>= 1.0)
+    lazy_high_charts (1.5.6)
       hash-deep-merge
-    libv8 (3.16.14.13)
+    libv8 (3.16.14.15)
     link_header (0.0.8)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
@@ -175,7 +175,7 @@ GEM
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     optionable (0.2.0)
-    origin (2.2.0)
+    origin (2.2.2)
     orm_adapter (0.5.0)
     paperclip (3.1.4)
       activemodel (>= 3.0.0)
@@ -214,7 +214,7 @@ GEM
       link_header (~> 0.0, >= 0.0.8)
     rdoc (4.2.2)
       json (~> 1.4)
-    redis (3.2.2)
+    redis (3.3.1)
     redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
     ref (2.0.0)
@@ -323,4 +323,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.11.0
+   1.13.1
