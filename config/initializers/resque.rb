@@ -17,4 +17,4 @@ Resque.schedule = YAML.load_file(File.join(Rails.root.to_s, 'config/resque_sched
 
 Resque.inline = Rails.env.test?
 
-Resque.redis = ENV['REDIS_URL']
+Resque.redis = ENV['REDIS_URL'] if ENV['REDIS_URL']
