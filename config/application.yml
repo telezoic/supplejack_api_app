@@ -19,6 +19,7 @@ defaults: &defaults
   BLACKLIST_MAILER_FROM: 'mailer@blacklist.org'
   MONGOID_HOSTS: 'localhost:27017'
   SECRET_TOKEN: 'd1cbb7c32869ad319dedabb4adbeba3678430235'
+  REDIS_URL: 'localhost:6379'
 
 development:
   <<: *defaults
