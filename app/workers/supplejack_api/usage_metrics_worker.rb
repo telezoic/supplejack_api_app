@@ -6,13 +6,16 @@
 # Supplejack was created by DigitalNZ at the National Library of NZ and 
 # the Department of Internal Affairs. http://digitalnz.org/supplejack
 
- module SupplejackApi
-  class FlushOldRecordsWorker
+module SupplejackApi
+  class UsageMetricsWorker
     include Sidekiq::Worker
-    sidekiq_options queue: 'low'
+    sidekiq_options queue: 'default'
 
-    def perform(source_id, job_id)
-      ::Record.flush_old_records(source_id, job_id)
+    def perform
+      Rails.logger.level = 1 unless Rails.env.development?
+      Rails.logger.info "UsageMetrics:[#{Time.now}]: worker start"
+      SupplejackApi::UsageMetrics.build_metrics
+      Rails.logger.info "UsageMetrics:[#{Time.now}]: worker complete"
     end
   end
 end
