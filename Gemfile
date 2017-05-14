@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 4.1.4'
 
 # Supplejack gems
-gem 'supplejack_api', git: 'https://github.com/hapiben/supplejack_api.git', branch: 'ba/remove-harvester-constraints'
+gem 'supplejack_api', git: 'https://github.com/digitalnz/supplejack_api.git'
 gem 'sunspot_rails', '~> 2.2.0'
 gem 'active_model_serializers', git: 'https://github.com/boost/active_model_serializers.git'
 gem 'mongoid_auto_inc', git: 'https://github.com/boost/mongoid_auto_inc.git'
@@ -19,6 +19,7 @@ gem 'jquery-rails' # Use jquery as the JavaScript library
 gem 'turbolinks' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'sdoc', '~> 0.4.0', group: :doc # bundle exec rake doc:rails generates the API under doc/api.
+gem 'whenever', require: false
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

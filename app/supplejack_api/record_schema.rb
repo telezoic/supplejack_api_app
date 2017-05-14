@@ -17,7 +17,7 @@ class RecordSchema
   string    :concept_ids,                                                                         namespace: :sj
   string    :title,                       search_boost: 10,     search_as: [:filter, :fulltext],  namespace: :dc
   string    :description,                 search_boost: 2,      search_as: [:filter, :fulltext],  namespace: :dc
-        
+
   string    :display_content_partner,                           search_as: [:filter, :fulltext],  namespace: :sj
   string    :display_collection,                                search_as: [:filter, :fulltext],  namespace: :sj
   string    :source_url,                                                                          namespace: :sj
@@ -55,7 +55,21 @@ class RecordSchema
     fields [:record_id]
   end
 
-   # Roles
+  group :sets do
+    fields [
+      :name,
+      :address
+    ]
+  end
+
+  group :valid_set_fields do
+    includes [:sets]
+    fields [
+      :tag
+    ]
+  end
+
+  # Roles
   role :developer do
     default true
   end
